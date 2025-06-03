@@ -6,3 +6,5 @@ RUN mkdir -p /etc/apt/keyrings && \
     chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list  && \
     apt update  && \
     apt install -y gpg eza bat fzf vim
+
+ENTRYPOINT ["/usr/bin/fish"]
