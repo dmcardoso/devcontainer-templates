@@ -1,0 +1,23 @@
+{
+  "id": "base",
+  "version": "14.0.0",
+  "name": "base container",
+  "description": "A simple base container settings",
+  "publisher": "Dev Container Spec",
+  "options": {
+    "image": {
+      "type": "string",
+      "description": "Images:",
+      "proposals": [
+        "mcr.microsoft.com/devcontainers/base:noble",
+        "mcr.microsoft.com/devcontainers/base:jammy",
+        "mcr.microsoft.com/devcontainers/base:focal",
+        "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye"
+      ],
+      "default": "mcr.microsoft.com/devcontainers/base:noble"
+    }
+  },
+  "platforms": [
+    "Any"
+  ]
+}
