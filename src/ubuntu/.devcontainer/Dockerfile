@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu
+FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 
 RUN mkdir -p /etc/apt/keyrings && \
     wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg  && \
@@ -7,6 +7,6 @@ RUN mkdir -p /etc/apt/keyrings && \
     apt update  && \
     apt install -y gpg eza bat fzf vim
 
-USER vscode
+#USER vscode
 
-CMD ["/usr/bin/fish"]
+CMD ["sleep", "infinity"]
