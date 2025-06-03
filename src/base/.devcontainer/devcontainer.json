@@ -1,9 +1,8 @@
 {
   "name": "base image",
-  "build": {
-    "dockerfile": "Dockerfile",
-  },
+  "image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
   "features": {
+    "ghcr.io/guiyomh/features/vim": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers-extra/features/fish-apt-get:1": {},
     "ghcr.io/devcontainers-extra/features/starship:1": {},

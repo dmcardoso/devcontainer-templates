@@ -1,20 +1,22 @@
 {
   "id": "base",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "name": "base container",
   "description": "A simple base container settings",
   "publisher": "Dev Container Spec",
   "options": {
-    "image": {
+    "imageVariant": {
       "type": "string",
       "description": "Images:",
       "proposals": [
-        "mcr.microsoft.com/devcontainers/base:noble",
-        "mcr.microsoft.com/devcontainers/base:jammy",
-        "mcr.microsoft.com/devcontainers/base:focal",
-        "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye"
+        "ubuntu",
+        "ubuntu-22.04",
+        "ubuntu-24.04",
+        "jammy",
+        "noble",
+        "focal"
       ],
-      "default": "mcr.microsoft.com/devcontainers/base:noble"
+      "default": "noble"
     }
   },
   "platforms": [
