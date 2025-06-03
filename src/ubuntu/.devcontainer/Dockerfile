@@ -7,4 +7,6 @@ RUN mkdir -p /etc/apt/keyrings && \
     apt update  && \
     apt install -y gpg eza bat fzf vim
 
+USER vscode
+
 CMD ["/usr/bin/fish"]
